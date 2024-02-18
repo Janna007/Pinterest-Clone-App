@@ -1,7 +1,11 @@
 const mongoose=require('mongoose')
 const plm=require('passport-local-mongoose')
 
-mongoose.connect("mongodb://127.0.0.1:27017/pinbase")
+
+// MONGODB_URI="mongodb+srv://jannakondeth5:janna123@cluster0.iwh2ys0.mongodb.net/"
+
+mongoose.connect("mongodb+srv://jannakondeth5:janna123@cluster0.iwh2ys0.mongodb.net/pinbase")
+
 
 const userSchema=mongoose.Schema({
     username:String,
